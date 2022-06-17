@@ -38,6 +38,8 @@
 
 * To test or run your project run `make test` or `make run` commands respectfully
 * Buf makes it easier to import third party `.proto` packages without manually copying them to your `/third_party` directory<br>
-  To manage your dependencies go to `/api/proto/buf.yaml` file and run `make update` command<br>
+  To manage your dependencies go to `/api/proto/buf.yaml` file and make changes in `deps` field<br>
+  Note: try to keep `deps` in `/api/proto/buf.yaml` and `go_package_prefix.except` in `buf.gen.yaml` in sync to avoid incorrect go import paths<br>
+  After all the above, run `make update` command<br>
   If you have buf extension installed, updated dependencies will be available in the intellisense
 * To learn more about buf tool, visit [introduction to buf](https://docs.buf.build/introduction)
