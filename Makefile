@@ -7,22 +7,36 @@ init:
 	go install github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-grpc-gateway
 	go install github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv2@latest
 
+.PHONY: update
+# update .lock files
+update:
+	cd ./api/proto; \
+ 	buf mod update; \
+ 	cd ../..; \
+
 .PHONY: gen
 # generate code from api description
 gen:
-	buf generate
+	make update; \
+ 	buf generate
 
 .PHONY: test
 # run all project tests
 test:
 	go test ./...
 
+.PHONY: run
+# run the server
+run:
+	make build; \
+	make exe
+
 .PHONY: build
-# compile project
+# compile server application
 build:
 	go build -o ./bin/server ./cmd/server/main.go
 
-.PHONY: run
-# run project
-run:
+.PHONY: exe
+# execute server binary
+exe:
 	./bin/server
