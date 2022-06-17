@@ -24,7 +24,7 @@
 
 ### Get coding
 
-* Write your first `.proto` file in `/api/proto/{proto package}` directory<br>
+* Write your first `.proto` file in `/api/proto/{proto_package}` directory<br>
   It may look like `/api/proto/v1/helloworld.proto`<br>
   or `/api/proto/helloworld/v1/helloworld.proto`
 * Run `make gen` command<br>
