@@ -31,7 +31,8 @@
   This will generate API specification (`api/spec/helloworld.swagger.json` file)<br>
   And `.pb.go` files in `/internal/api/helloworld/v1` or `/internal/api/v1` directory<br>
   corresponding to your `.proto` package name
-* Write your handlers, use cases and repositories, set up gRPC and/or HTTP servers
+* Write your handlers, use cases and repositories, set up gRPC and/or HTTP servers<br>
+  Note: for more help, you can find a `README.md` file in each directory of this repository 
 
 ### Tools
 
