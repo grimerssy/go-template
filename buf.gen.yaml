@@ -28,4 +28,4 @@ plugins:
       - allow_patch_feature=false
       - paths=source_relative
   - name: openapiv2
-    out: api/spec
+    out: api/specs
