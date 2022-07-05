@@ -1,5 +1,4 @@
 # `/deploy`
 
-Deployment files of the project
-
-e.g. Docker, k8s or Terraform support
+Deployment files of the project. <br>
+(e.g. Docker, k8s or Terraform support).

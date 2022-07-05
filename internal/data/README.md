@@ -1,7 +1,5 @@
 # `/internal/data`
 
-Data access layer of your application
+Data access layer of the application.
 
-Add and retrieve data from your data source here
-
-Note: may be versioned if necessary
+Add and retrieve data from the data source here.

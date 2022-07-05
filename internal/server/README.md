@@ -1,5 +1,5 @@
 # `/internal/server`
 
-Server configuration and mappings of middleware and handlers 
+Server configuration. 
 
-Note: should make all versions of handlers accessible from their endpoints 
+Note: should make all versions of handlers accessible from their endpoints. 
