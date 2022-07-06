@@ -14,14 +14,18 @@ init:
 update:
 	cd ./api/proto; \
  	buf mod update; \
- 	cd ../..; \
+ 	cd ../..
+
+.PHONY: api
+# generate code from api definitions
+api:
+	make update; \
+	buf generate
 
 .PHONY: gen
-# generate code from api description
+# recursively invoke go:generate tool
 gen:
-	make update; \
-	buf generate; \
- 	go generate ./...
+	go generate ./...
 
 .PHONY: test
 # run all project tests
