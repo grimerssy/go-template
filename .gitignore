@@ -1,6 +1,5 @@
 # Environment variables
-.env
-.envrc
+*.env
 
 # IDE settings
 .idea/
