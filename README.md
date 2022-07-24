@@ -1,10 +1,20 @@
 # Project setup made easy
 
+---
+
+### Introduction
+
 This is a template repository, which can be used to create backend projects in `Go` programming language. <br>
 It uses `proto` programming language to create an API definition, which is used to generate stubs for gRPC and REST endpoints as well as openAPI.v2 JSON specification. <br>
 Think of end product as gRPC service with REST proxy (which is created with minimal effort using [grpc-gateway](https://github.com/grpc-ecosystem/grpc-gateway)). <br>
 Also [buf](https://docs.buf.build) is used to manage proto dependencies without manually downloading files and placing them in your project. <br>
 This template has some pre-imported proto libraries (i.e. googleapis/googleapis, envoyproxy/protoc-gen-validate and grpc-ecosystem/grpc-gateway)
+
+### Examples
+
+- [go-example](https://github.com/grimerssy/go-example) - simple to 
+  understand project that uses this template, which will introduce you to 
+  the technologies I use
 
 ---
 
