@@ -6,6 +6,8 @@ Think of end product as gRPC service with REST proxy (which is created with mini
 Also [buf](https://docs.buf.build) is used to manage proto dependencies without manually downloading files and placing them in your project. <br>
 This template has some pre-imported proto libraries (i.e. googleapis/googleapis, envoyproxy/protoc-gen-validate and grpc-ecosystem/grpc-gateway)
 
+---
+
 ### Prerequisites
 
 * Go binary installed ([link](https://go.dev/dl/)).
@@ -15,6 +17,8 @@ This template has some pre-imported proto libraries (i.e. googleapis/googleapis,
 
 * Buf extension in your IDE of choice.<br>
   This will include real-time `.proto` file linting and provide additional intellisense.
+
+---
 
 ### Project setup
 
@@ -39,6 +43,8 @@ This template has some pre-imported proto libraries (i.e. googleapis/googleapis,
   corresponding to your `.proto` package name.
 * Write your handlers, use cases and repositories, set up gRPC and/or HTTP servers.<br>
   Note: for more help, you can find a `README.md` file in each directory of this repository. 
+
+---
 
 ### Tools
 
