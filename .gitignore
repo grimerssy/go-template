@@ -21,3 +21,7 @@ bin/
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+# Finder specific files
+.DS_Store
+
